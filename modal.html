@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../ pro/img/img2.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modal Login</title>
+</head>
+<body>
+    <section class="main-section">
+        <div class="main-page">
+            <h1> Welcome Back!!!</h1>
+            <div class="btnG"> 
+                <button class="btn"> login</button>
+                <button class="btn2"> Sign Up</button>
+            </div>
+            <div class="modal-box">
+                <div class="modal-content1">
+                        <div class="modal-content">
+                                <h1> something Went Wrong! 
+                                    <span class="close-btn"> * </span>
+                                </h1>
+                                 <p> this is the only website i have done try again </p>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-box3">
+                    <div class="modal-content2">
+                            <div class="modal-signup">
+                                    <h1> Ajasa Taiwo 
+                                        <span class="close-btn"> * </span>
+                                    </h1>
+                                     <p> Hello there i am Ajasa Taiwo(TechWithTee) </p>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script> 
+        let modal = document.querySelector('.modal-box'); 
+        let btn = document.querySelector(".btn"); 
+        let btn2 = document.querySelector(".btn2"); 
+        let closeBtn = document.querySelector("span"); 
+        let modalBox3 = document.querySelector(".modal-box3"); 
+
+        function myModalBox(){ 
+            modal.style.display = 'block'; 
+            // modalBox2.style.display = 'none';
+        }
+        function myModalBox2(){ 
+            modalBox3.style.display = 'block'; 
+        }
+
+        btn.addEventListener('click', () => { 
+            myModalBox();
+        });
+        btn2.addEventListener('click', () => { 
+            myModalBox2();
+        });
+        closeBtn.addEventListener('click', () => { 
+            modal.style.display = 'none'; 
+            modal
+        }); 
+        
+    </script>
+</body>
+</html>
